@@ -1,0 +1,40 @@
+<%- model_class = Wxzhuanzhang -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:jin) %></th>
+      <th><%= model_class.human_attribute_name(:riqi) %></th>
+      <th><%= model_class.human_attribute_name(:xingming) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @wxzhuanzhangs.each do |wxzhuanzhang| %>
+      <tr>
+        <td><%= link_to wxzhuanzhang.id, wxzhuanzhang_path(wxzhuanzhang) %></td>
+        <td><%= wxzhuanzhang.jin %></td>
+        <td><%= wxzhuanzhang.riqi %></td>
+        <td><%= wxzhuanzhang.xingming %></td>
+        <td><%=l wxzhuanzhang.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_wxzhuanzhang_path(wxzhuanzhang), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      wxzhuanzhang_path(wxzhuanzhang),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_wxzhuanzhang_path,
+            :class => 'btn btn-primary' %>

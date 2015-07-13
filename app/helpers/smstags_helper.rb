@@ -1,0 +1,2 @@
+module SmstagsHelper
+end

@@ -1,0 +1,2 @@
+module SmstaglistsHelper
+end

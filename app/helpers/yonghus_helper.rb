@@ -1,0 +1,2 @@
+module YonghusHelper
+end

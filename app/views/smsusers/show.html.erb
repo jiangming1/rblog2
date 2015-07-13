@@ -1,0 +1,29 @@
+<%- model_class = Smsuser -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:usertype) %>:</strong></dt>
+  <dd><%= @smsuser.usertype %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:qq) %>:</strong></dt>
+  <dd><%= @smsuser.qq %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mail) %>:</strong></dt>
+  <dd><%= @smsuser.mail %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mob) %>:</strong></dt>
+  <dd><%= @smsuser.mob %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:loginname) %>:</strong></dt>
+  <dd><%= @smsuser.loginname %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:zhifubao) %>:</strong></dt>
+  <dd><%= @smsuser.zhifubao %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              smsusers_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_smsuser_path(@smsuser), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              smsuser_path(@smsuser),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

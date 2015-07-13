@@ -1,0 +1,108 @@
+<%= form_for @zf_bduihua, :html => { :class => "form-horizontal zf_bduihua" } do |f| %>
+
+    <% if @zf_bduihua.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@zf_bduihua.errors.count, "error") %> prohibited this zf_bduihua from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @zf_bduihua.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :riqi1, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :riqi1, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:riqi1]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :riqi2, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :riqi2, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:riqi2]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :riqi3, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :riqi3, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:riqi3]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :jin1, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jin1, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:jin1]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :jin2, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jin2, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:jin2]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :jin3, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jin3, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:jin3]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :touxiang, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :touxiang, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:touxiang]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :zhanghu, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zhanghu, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:zhanghu]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :shouji, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :shouji, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:shouji]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :jiaoyihao, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jiaoyihao, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:jiaoyihao]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :shijian, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :shijian, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:shijian]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bduihua[:name]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            zf_bduihuas_path, :class => 'btn btn-default' %>
+
+<% end %>

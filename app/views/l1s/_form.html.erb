@@ -1,0 +1,45 @@
+<%= form_for @l1, :html => { :class => "form-horizontal l1" } do |f| %>
+
+    <% if @l1.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@l1.errors.count, "error") %> prohibited this l1 from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @l1.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :a, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :a, :class => 'form-control' %>
+    </div>
+    <%= error_span(@l1[:a]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :user, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :user, :class => 'form-control' %>
+    </div>
+    <%= error_span(@l1[:user]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :passwd58, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :passwd58, :class => 'form-control' %>
+    </div>
+    <%= error_span(@l1[:passwd58]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            l1s_path, :class => 'btn btn-default' %>
+
+<% end %>

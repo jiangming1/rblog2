@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing P2pcompanies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>C name</th>
+      <th>C icon</th>
+      <th>C net address</th>
+      <th>C phone</th>
+      <th>C address</th>
+      <th>C create time</th>
+      <th>C persion</th>
+      <th>C province</th>
+      <th>C product type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @p2pcompanies.each do |p2pcompany| %>
+      <tr>
+        <td><%= p2pcompany.c_name %></td>
+        <td><%= p2pcompany.c_icon %></td>
+        <td><%= p2pcompany.c_net_address %></td>
+        <td><%= p2pcompany.c_phone %></td>
+        <td><%= p2pcompany.c_address %></td>
+        <td><%= p2pcompany.c_create_time %></td>
+        <td><%= p2pcompany.c_persion %></td>
+        <td><%= p2pcompany.c_province %></td>
+        <td><%= p2pcompany.c_product_type %></td>
+        <td><%= link_to 'Show', p2pcompany %></td>
+        <td><%= link_to 'Edit', edit_p2pcompany_path(p2pcompany) %></td>
+        <td><%= link_to 'Destroy', p2pcompany, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @P2pcompanies %>  
+<br>
+
+<%= link_to 'New P2pcompany', new_p2pcompany_path %>

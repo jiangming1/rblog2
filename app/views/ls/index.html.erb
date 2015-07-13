@@ -1,0 +1,28 @@
+<%- model_class = L -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:a) %></th>
+      <th>状态</th>
+      <th>方式<%=@ipinfo%></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @ls.each do |l| %>
+      <tr>
+        <td><%= link_to l.id, l_path(l) %></td>
+        <td><a href=http://hz.58.com/zufang/<%= l.a %>x.shtml>http://hz.58.com/zufang/<%=l.a%>x.shtml</a> </td>
+        <td>成功</td>
+        <td>免费</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_l1_path,
+            :class => 'btn btn-primary' %>

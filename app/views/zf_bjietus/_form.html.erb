@@ -1,0 +1,59 @@
+<%= form_for @zf_bjietu, :html => { :class => "form-horizontal zf_bjietu" } do |f| %>
+
+    <% if @zf_bjietu.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@zf_bjietu.errors.count, "error") %> prohibited this zf_bjietu from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @zf_bjietu.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :biaotixingming, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :biaotixingming, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bjietu[:biaotixingming]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :zhanghu, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zhanghu, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bjietu[:zhanghu]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :shouji, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :shouji, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bjietu[:shouji]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :jiaoyihao, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jiaoyihao, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bjietu[:jiaoyihao]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :shijian, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :shijian, :class => 'form-control' %>
+    </div>
+    <%= error_span(@zf_bjietu[:shijian]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            zf_bjietus_path, :class => 'btn btn-default' %>
+
+<% end %>

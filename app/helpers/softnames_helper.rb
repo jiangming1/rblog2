@@ -1,0 +1,2 @@
+module SoftnamesHelper
+end

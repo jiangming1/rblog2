@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  oldbi: MyString
+  chongzhijine: 1
+  chongzhibi: MyString
+  dingdanhao: MyString
+
+two:
+  oldbi: MyString
+  chongzhijine: 1
+  chongzhibi: MyString
+  dingdanhao: MyString

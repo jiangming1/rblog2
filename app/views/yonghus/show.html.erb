@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Xingming:</strong>
+  <%= @yonghu.xingming %>
+</p>
+
+<p>
+  <strong>Gongsimingcheng:</strong>
+  <%= @yonghu.gongsimingcheng %>
+</p>
+
+<p>
+  <strong>Shouji:</strong>
+  <%= @yonghu.shouji %>
+</p>
+
+<p>
+  <strong>Qq:</strong>
+  <%= @yonghu.qq %>
+</p>
+
+<p>
+  <strong>Quhao:</strong>
+  <%= @yonghu.quhao %>
+</p>
+
+<p>
+  <strong>Gongsidianhua:</strong>
+  <%= @yonghu.gongsidianhua %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @yonghu.ip %>
+</p>
+<%= image_tag @yonghu.avatar.url(:thumb) %>
+<%= link_to 'Edit', edit_yonghu_path(@yonghu) %> |
+<%= link_to 'Back', yonghus_path %>

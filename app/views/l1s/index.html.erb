@@ -1,0 +1,31 @@
+<%- model_class = L1 -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:a) %></th>
+      <th><%= model_class.human_attribute_name(:user) %></th>
+      <th><%= model_class.human_attribute_name(:passwd58) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @l1s.each do |l1| %>
+      <tr>
+        <td><%= link_to l1.id, l1_path(l1) %></td>
+        <td><%= l1.a %></td>
+        <td><%= l1.user %></td>
+        <td><%= l1.passwd58 %></td>
+        <td><%=l l1.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_l1_path,
+            :class => 'btn btn-primary' %>

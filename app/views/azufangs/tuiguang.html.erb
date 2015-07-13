@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @azufang.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @azufang.password %>
+</p>
+
+<p>
+  <strong>Innertext:</strong>
+  <%= @azufang.innertext %>
+</p>
+
+<p>
+  <strong>Xiaoqu:</strong>
+  <%= @azufang.xiaoqu %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @azufang.title %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @azufang.area %>
+</p>
+
+<p>
+  <strong>Minprice:</strong>
+  <%= @azufang.minprice %>
+</p>
+
+<p>
+  <strong>Lianxiren:</strong>
+  <%= @azufang.lianxiren %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @azufang.phone %>
+</p>
+
+<p>
+  <strong>money:</strong>
+  <%= @azufang.money %>
+</p>
+<p>
+<%= image_tag @azufang.photo.url(:thumb) %>
+
+</p>
+<%= link_to 'Edit', edit_azufang_path(@azufang) %> |
+<%= link_to 'Back', azufangs_path %>

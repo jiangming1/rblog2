@@ -1,0 +1,178 @@
+<%= form_for @azufang, :html => { :class => "form-horizontal azufang" } do |f| %>
+
+    <% if @azufang.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@azufang.errors.count, "error") %> prohibited this azufang from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @azufang.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :username, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :username, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:username]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :password, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :password, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:password]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :innertext, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :innertext, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:innertext]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :xiaoqu, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :xiaoqu, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:xiaoqu]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:title]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :area, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :area, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:area]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :minprice, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :minprice, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:minprice]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :lianxiren, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :lianxiren, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:lianxiren]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phone, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:phone]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :tupian, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :tupian, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:tupian]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :photo_file_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :photo_file_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:photo_file_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :photo_content_type, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :photo_content_type, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:photo_content_type]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :photo_file_size, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :photo_file_size, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:photo_file_size]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :photo_updated_at, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :photo_updated_at, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:photo_updated_at]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :money, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :money, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:money]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :weixin, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :weixin, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:weixin]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :qq, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :qq, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:qq]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :shi, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :shi, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:shi]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :ting, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :ting, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:ting]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :wei, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :wei, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:wei]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :ceng, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :ceng, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:ceng]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :zongceng, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zongceng, :class => 'form-control' %>
+    </div>
+    <%= error_span(@azufang[:zongceng]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            azufangs_path, :class => 'btn btn-default' %>
+
+<% end %>

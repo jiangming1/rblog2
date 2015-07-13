@@ -1,0 +1,42 @@
+<%- model_class = Smschongzhirecord -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:oldbi) %></th>
+      <th><%= model_class.human_attribute_name(:chongzhijine) %></th>
+      <th><%= model_class.human_attribute_name(:chongzhibi) %></th>
+      <th><%= model_class.human_attribute_name(:dingdanhao) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @smschongzhirecords.each do |smschongzhirecord| %>
+      <tr>
+        <td><%= link_to smschongzhirecord.id, smschongzhirecord_path(smschongzhirecord) %></td>
+        <td><%= smschongzhirecord.oldbi %></td>
+        <td><%= smschongzhirecord.chongzhijine %></td>
+        <td><%= smschongzhirecord.chongzhibi %></td>
+        <td><%= smschongzhirecord.dingdanhao %></td>
+        <td><%=l smschongzhirecord.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_smschongzhirecord_path(smschongzhirecord), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      smschongzhirecord_path(smschongzhirecord),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_smschongzhirecord_path,
+            :class => 'btn btn-primary' %>

@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing P2pproducts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Lowestamount</th>
+      <th>Producttypelabel</th>
+      <th>Suppliernameshort</th>
+      <th>Supplierlogourl</th>
+      <th>Channelurl</th>
+      <th>Expectedprofitrate</th>
+      <th>Idea</th>
+      <th>Extrafields</th>
+      <th>Investfield</th>
+      <th>Term</th>
+      <th>P min investment</th>
+      <th>Earlyback</th>
+      <th>Earlytransfer</th>
+      <th>P title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @p2pproducts.each do |p2pproduct| %>
+      <tr>
+        <td><%= p2pproduct.name %></td>
+        <td><%= p2pproduct.company %></td>
+        <td><%= p2pproduct.lowestAmount %></td>
+        <td><%= p2pproduct.producttypelabel %></td>
+        <td><%= p2pproduct.suppliernameshort %></td>
+        <td><%= p2pproduct.supplierlogourl %></td>
+        <td><%= p2pproduct.channelurl %></td>
+        <td><%= p2pproduct.expectedprofitrate %></td>
+        <td><%= p2pproduct.idea %></td>
+        <td><%= p2pproduct.extrafields %></td>
+        <td><%= p2pproduct.investfield %></td>
+        <td><%= p2pproduct.term %></td>
+        <td><%= p2pproduct.p_min_investment %></td>
+        <td><%= p2pproduct.earlyBack %></td>
+        <td><%= p2pproduct.earlytransfer %></td>
+        <td><%= p2pproduct.p_title %></td>
+        <td><%= link_to 'Show', p2pproduct %></td>
+        <td><%= link_to 'Edit', edit_p2pproduct_path(p2pproduct) %></td>
+        <td><%= link_to 'Destroy', p2pproduct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%=will_paginate @p2pproducts%>
+<br>
+
+<%= link_to 'New P2pproduct', new_p2pproduct_path %>

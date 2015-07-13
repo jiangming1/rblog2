@@ -1,0 +1,46 @@
+<%- model_class = Smsperson -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:type) %></th>
+      <th><%= model_class.human_attribute_name(:qq) %></th>
+      <th><%= model_class.human_attribute_name(:mail) %></th>
+      <th><%= model_class.human_attribute_name(:mob) %></th>
+      <th><%= model_class.human_attribute_name(:loginname) %></th>
+      <th><%= model_class.human_attribute_name(:zhifubao) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @smspeople.each do |smsperson| %>
+      <tr>
+        <td><%= link_to smsperson.id, smsperson_path(smsperson) %></td>
+        <td><%= smsperson.type %></td>
+        <td><%= smsperson.qq %></td>
+        <td><%= smsperson.mail %></td>
+        <td><%= smsperson.mob %></td>
+        <td><%= smsperson.loginname %></td>
+        <td><%= smsperson.zhifubao %></td>
+        <td><%=l smsperson.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_smsperson_path(smsperson), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      smsperson_path(smsperson),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_smsperson_path,
+            :class => 'btn btn-primary' %>

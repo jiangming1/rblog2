@@ -1,0 +1,2 @@
+module SmschongzhirecordsHelper
+end

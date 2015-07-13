@@ -1,0 +1,66 @@
+<%= form_for @smsuser, :html => { :class => "form-horizontal smsuser" } do |f| %>
+
+    <% if @smsuser.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@smsuser.errors.count, "error") %> prohibited this smsuser from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @smsuser.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :usertype, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :usertype, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:usertype]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :qq, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :qq, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:qq]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :mail, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mail, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:mail]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :mob, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mob, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:mob]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :loginname, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :loginname, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:loginname]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :zhifubao, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zhifubao, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smsuser[:zhifubao]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            smsusers_path, :class => 'btn btn-default' %>
+
+<% end %>

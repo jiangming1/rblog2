@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>软件编辑页面</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>软件名</th>
+      <th>华军上架</th>
+      <th>多特上架</th>
+      <th>天空上架</th>
+      <th>说明内容</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @softnames.each do |softname| %>
+      <tr>
+        <td><%= softname.name %></td>
+        <td><%= softname.huajun_id %></td>
+        <td><%= softname.duote_id %></td>
+        <td><%= softname.crsky_id %></td>
+        <td><%= softname.body %></td>
+        <td><%= link_to '编辑', edit_softname_path(softname) %></td>
+        <td><%= link_to '删除', softname, method: :delete, data: { confirm: '确定?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新建', new_softname_path %>

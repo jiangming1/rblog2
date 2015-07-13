@@ -1,0 +1,23 @@
+<%- model_class = Wxzhuanzhang -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:jin) %>:</strong></dt>
+  <dd><%= @wxzhuanzhang.jin %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:riqi) %>:</strong></dt>
+  <dd><%= @wxzhuanzhang.riqi %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:xingming) %>:</strong></dt>
+  <dd><%= @wxzhuanzhang.xingming %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              wxzhuanzhangs_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_wxzhuanzhang_path(@wxzhuanzhang), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              wxzhuanzhang_path(@wxzhuanzhang),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

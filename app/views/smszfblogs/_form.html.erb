@@ -1,0 +1,25 @@
+<%= form_for(@smszfblog) do |f| %>
+  <% if @smszfblog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@smszfblog.errors.count, "error") %> prohibited this smszfblog from being saved:</h2>
+
+      <ul>
+      <% @smszfblog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :zfbid %><br>
+    <%= f.text_field :zfbid %>
+  </div>
+  <div class="field">
+    <%= f.label :qian %><br>
+    <%= f.number_field :qian %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

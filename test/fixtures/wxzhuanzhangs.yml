@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jin: MyString
+  riqi: 2015-05-27 22:16:51
+  xingming: MyString
+
+two:
+  jin: MyString
+  riqi: 2015-05-27 22:16:51
+  xingming: MyString

@@ -1,0 +1,70 @@
+<%- model_class = Center -%>
+<div class="page-header">
+  <div id=qian>
+  <%=current_user.qian %>
+  </div>
+  <h1>获取验证码</h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>支付宝id</th><th><input id=zfbid ><button id=bzfb >充值</button></th>
+    </tr>
+    <tr>
+      <th>项目</th><th>
+
+        <%=
+ if !params[:name].nil? then
+          @payments=Smstag.where("name like ? ",'%'+params[:name]+'%')  
+          collection_select(:name, :id, @payments, :id, :name, options ={}, :class =>"smstag") 
+ end        
+        %>  
+          
+        <form><input name=name ><button>搜索</button></form></th>
+        </tr><tr>  <th>手机号码</th><th><input  id=itel><button id=bgettel >获取号码</button></释放手机号><button>加入黑名单</button></th>
+        </tr><tr>   <th>验证码</th><th><input id=icode><div id=dcode></div></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<script>
+$(document).ready(function(){
+  $("#bzfb").click(function(){
+    zfbid=$("#zfbid").val();
+    htmlobj=$.ajax({url:"/smszfblogs/1.json?t="+zfbid,async:false});
+    jsonResp=eval("("+htmlobj.responseText+")");
+    if (!jsonResp.qian==""){
+      $("#qian").html(jsonResp.qian*100);
+      // timer1=window.setInterval(f,8000);
+      window.setTimeout(f,8000);
+      g1=1;
+    };
+  });
+  $("#bgettel").click(function(){
+    smstagid=$("#name_id").val();
+    htmlobj=$.ajax({url:"/smstags/"+smstagid+".json",async:false});
+    jsonResp=eval("("+htmlobj.responseText+")");
+    if (!jsonResp.mobno==""){
+      $("#itel").val(jsonResp.mobno);
+      // timer1=window.setInterval(f,8000);
+      window.setTimeout(f,8000);
+      g1=1;
+      }else{
+    $("#itel").val("余额为0请充值");
+    }
+          });
+      });
+function f(){
+  g1=g1+1;
+  itel=$("#itel").val();
+  nameid=$("#name_id").val();
+  htmlobj=$.ajax({url:"/smsreceiveds/1.json?t="+itel+"&nameid="+nameid,async:false});
+      jsonResp=eval("("+htmlobj.responseText+")");
+      $("#icode").val(jsonResp.body);
+      if (jsonResp.body=""){
+      window.setTimeout(f,8000);
+      }
+  $("#dcode").html("第"+g1+"次获取验证码");
+}    
+</script>

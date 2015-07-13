@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      softname: '软件名称'
+    attributes:
+      softname:
+        name: '名称'
+        huajun_id: '华军'
+        duote_id: '多特'
+        crsky_id: '备注'
+        body: '文件'
+

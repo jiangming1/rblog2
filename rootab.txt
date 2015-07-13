@@ -1,0 +1,46 @@
+docker0   Link encap:Ethernet  HWaddr 00:00:00:00:00:00  
+          inet addr:172.17.42.1  Bcast:0.0.0.0  Mask:255.255.0.0
+          inet6 addr: fe80::fcb7:9aff:fe65:bb92/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1124 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1272 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1397024 (1.3 MiB)  TX bytes:249014 (243.1 KiB)
+
+eth0      Link encap:Ethernet  HWaddr B8:AC:6F:47:78:CA  
+          inet addr:10.10.20.39  Bcast:10.10.20.255  Mask:255.255.255.0
+          inet6 addr: fe80::baac:6fff:fe47:78ca/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2128758 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1839202 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:639094415 (609.4 MiB)  TX bytes:241053423 (229.8 MiB)
+          Interrupt:16 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:13526 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13526 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:21818761 (20.8 MiB)  TX bytes:21818761 (20.8 MiB)
+
+vmnet1    Link encap:Ethernet  HWaddr 00:50:56:C0:00:01  
+          inet addr:192.168.232.1  Bcast:192.168.232.255  Mask:255.255.255.0
+          inet6 addr: fe80::250:56ff:fec0:1/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:6 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+vmnet8    Link encap:Ethernet  HWaddr 00:50:56:C0:00:08  
+          inet addr:192.168.227.1  Bcast:192.168.227.255  Mask:255.255.255.0
+          inet6 addr: fe80::250:56ff:fec0:8/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:6 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+

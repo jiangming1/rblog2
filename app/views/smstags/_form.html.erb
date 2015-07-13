@@ -1,0 +1,66 @@
+<%= form_for @smstag, :html => { :class => "form-horizontal smstag" } do |f| %>
+
+    <% if @smstag.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@smstag.errors.count, "error") %> prohibited this smstag from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @smstag.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :price, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :price, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:price]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :mobid, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mobid, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:mobid]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :mobno, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mobno, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:mobno]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :laiyuan, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :laiyuan, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:laiyuan]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :isonline, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :isonline, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smstag[:isonline]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            smstags_path, :class => 'btn btn-default' %>
+
+<% end %>

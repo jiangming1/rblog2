@@ -1,0 +1,49 @@
+<%= form_for @yonghu, :url => yonghus_path, :html => { :multipart => true } do |f| %>
+  <% if @yonghu.errors.any? %>
+    <div id="error_explanation">
+      <h2>错误发生无法保存</h2>
+
+      <ul>
+      <% @yonghu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :xingming %><br>
+    <%= f.text_field :xingming %>
+  </div>
+  <div class="field">
+    <%= f.label :gongsimingcheng %><br>
+    <%= f.text_field :gongsimingcheng %>
+  </div>
+  <div class="field">
+    <%= f.label :shouji %><br>
+    <%= f.text_field :shouji %>
+  </div>
+  <div class="field">
+    <%= f.label :qq %><br>
+    <%= f.number_field :qq %>
+  </div>
+  <div class="field">
+    <%= f.label :quhao %><br>
+    <%= f.number_field :quhao %>
+  </div>
+  <div class="field">
+    <%= f.label :gongsidianhua %><br>
+    <%= f.number_field :gongsidianhua %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br>
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

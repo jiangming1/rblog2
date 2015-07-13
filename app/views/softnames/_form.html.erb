@@ -1,0 +1,37 @@
+<%= form_for(@softname) do |f| %>
+  <% if @softname.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@softname.errors.count, "error") %> prohibited this softname from being saved:</h2>
+
+      <ul>
+      <% @softname.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :huajun_id %><br>
+    <%= f.text_field :huajun_id %>
+  </div>
+  <div class="field">
+    <%= f.label :duote_id %><br>
+    <%= f.text_field :duote_id %>
+  </div>
+  <div class="field">
+    <%= f.label :crsky_id %><br>
+    <%= f.text_field :crsky_id %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

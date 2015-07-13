@@ -1,0 +1,58 @@
+<%- model_class = ZfBduihua -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:riqi1) %></th>
+      <th><%= model_class.human_attribute_name(:riqi2) %></th>
+      <th><%= model_class.human_attribute_name(:riqi3) %></th>
+      <th><%= model_class.human_attribute_name(:jin1) %></th>
+      <th><%= model_class.human_attribute_name(:jin2) %></th>
+      <th><%= model_class.human_attribute_name(:jin3) %></th>
+      <th><%= model_class.human_attribute_name(:touxiang) %></th>
+      <th><%= model_class.human_attribute_name(:zhanghu) %></th>
+      <th><%= model_class.human_attribute_name(:shouji) %></th>
+      <th><%= model_class.human_attribute_name(:jiaoyihao) %></th>
+      <th><%= model_class.human_attribute_name(:shijian) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @zf_bduihuas.each do |zf_bduihua| %>
+      <tr>
+        <td><%= link_to zf_bduihua.id, zf_bduihua_path(zf_bduihua) %></td>
+        <td><%= zf_bduihua.riqi1 %></td>
+        <td><%= zf_bduihua.riqi2 %></td>
+        <td><%= zf_bduihua.riqi3 %></td>
+        <td><%= zf_bduihua.jin1 %></td>
+        <td><%= zf_bduihua.jin2 %></td>
+        <td><%= zf_bduihua.jin3 %></td>
+        <td><%= zf_bduihua.touxiang %></td>
+        <td><%= zf_bduihua.zhanghu %></td>
+        <td><%= zf_bduihua.shouji %></td>
+        <td><%= zf_bduihua.jiaoyihao %></td>
+        <td><%= zf_bduihua.shijian %></td>
+        <td><%= zf_bduihua.name %></td>
+        <td><%=l zf_bduihua.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_zf_bduihua_path(zf_bduihua), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      zf_bduihua_path(zf_bduihua),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_zf_bduihua_path,
+            :class => 'btn btn-primary' %>

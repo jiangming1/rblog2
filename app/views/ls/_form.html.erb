@@ -1,0 +1,31 @@
+<%= form_for @l, :html => { :class => "form-horizontal l" } do |f| %>
+
+    <% if @l.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@l.errors.count, "error") %> prohibited this l from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @l.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :a, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :a, :class => 'form-control' %>
+    </div>
+    <%= error_span(@l[:a]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            ls_path, :class => 'btn btn-default' %>
+
+<% end %>

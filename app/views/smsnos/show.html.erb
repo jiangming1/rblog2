@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No:</strong>
+  <%= @smsno.no %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @smsno.name %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @smsno.tag %>
+</p>
+
+<%= link_to 'Edit', edit_smsno_path(@smsno) %> |
+<%= link_to 'Back', smsnos_path %>

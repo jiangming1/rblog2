@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Smsuserusedtellists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Telpostion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @smsuserusedtellists.each do |smsuserusedtellist| %>
+      <tr>
+        <td><%= smsuserusedtellist.name %></td>
+        <td><%= smsuserusedtellist.telpostion %></td>
+        <td><%= link_to 'Show', smsuserusedtellist %></td>
+        <td><%= link_to 'Edit', edit_smsuserusedtellist_path(smsuserusedtellist) %></td>
+        <td><%= link_to 'Destroy', smsuserusedtellist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Smsuserusedtellist', new_smsuserusedtellist_path %>

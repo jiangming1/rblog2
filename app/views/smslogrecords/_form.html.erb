@@ -1,0 +1,52 @@
+<%= form_for @smslogrecord, :html => { :class => "form-horizontal smslogrecord" } do |f| %>
+
+    <% if @smslogrecord.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@smslogrecord.errors.count, "error") %> prohibited this smslogrecord from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @smslogrecord.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :jieshouhaoma, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :jieshouhaoma, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smslogrecord[:jieshouhaoma]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :neirong, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :neirong, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smslogrecord[:neirong]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :xiangmu, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :xiangmu, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smslogrecord[:xiangmu]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :huoqushijian, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :huoqushijian, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smslogrecord[:huoqushijian]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            smslogrecords_path, :class => 'btn btn-default' %>
+
+<% end %>

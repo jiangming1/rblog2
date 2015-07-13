@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  c_name: MyString
+  c_icon: MyString
+  c_net_address: MyString
+  c_phone: MyString
+  c_address: MyString
+  c_create_time: MyString
+  c_persion: MyString
+  c_province: MyString
+  c_product_type: MyString
+
+two:
+  c_name: MyString
+  c_icon: MyString
+  c_net_address: MyString
+  c_phone: MyString
+  c_address: MyString
+  c_create_time: MyString
+  c_persion: MyString
+  c_province: MyString
+  c_product_type: MyString

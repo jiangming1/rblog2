@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @softname.name %>
+</p>
+
+<p>
+  <strong>Huajun:</strong>
+  <%= @softname.huajun_id %>
+</p>
+
+<p>
+  <strong>Duote:</strong>
+  <%= @softname.duote_id %>
+</p>
+
+<p>
+  <strong>Crsky:</strong>
+  <%= @softname.crsky_id %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @softname.body %>
+</p>
+
+<%= link_to 'Edit', edit_softname_path(@softname) %> |
+<%= link_to 'Back', softnames_path %>

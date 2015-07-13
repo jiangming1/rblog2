@@ -1,0 +1,53 @@
+<%= form_for(@p2pcompany) do |f| %>
+  <% if @p2pcompany.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@p2pcompany.errors.count, "error") %> prohibited this p2pcompany from being saved:</h2>
+
+      <ul>
+      <% @p2pcompany.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :c_name %><br>
+    <%= f.text_field :c_name %>
+  </div>
+  <div class="field">
+    <%= f.label :c_icon %><br>
+ <%= f.file_field :c_icon %>
+  </div>
+  <div class="field">
+    <%= f.label :c_net_address %><br>
+    <%= f.text_field :c_net_address %>
+  </div>
+  <div class="field">
+    <%= f.label :c_phone %><br>
+    <%= f.text_field :c_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :c_address %><br>
+    <%= f.text_field :c_address %>
+  </div>
+  <div class="field">
+    <%= f.label :c_create_time %><br>
+    <%= f.text_field :c_create_time %>
+  </div>
+  <div class="field">
+    <%= f.label :c_persion %><br>
+    <%= f.text_field :c_persion %>
+  </div>
+  <div class="field">
+    <%= f.label :c_province %><br>
+    <%= f.text_field :c_province %>
+  </div>
+  <div class="field">
+    <%= f.label :c_product_type %><br>
+    <%= f.text_field :c_product_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

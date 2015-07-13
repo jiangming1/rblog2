@@ -1,0 +1,177 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  Back: "退回"
+  Cancel: "取消"
+  sign up: "注册"
+  activerecord:
+    models:
+      blog: "博客" 
+      yonghu: "注册用户"
+      p2pcompany: "公司"
+      p2pproduct: "产品"
+      azufang: '房屋顶贴'
+      l: '房源发布列表'
+      l1: '新增房源'
+      zf_bjietu: '支付宝截图'
+      zf_bduihua: '支付宝对话'
+      wxzhuanzhang: '微信转账截图'
+      smslogrecord: '短信记录'
+      smschongzhirecord: '充值记录'
+      
+    attributes:
+      p2pcompany:
+        c_name: "公司名称"
+        c_icon: "公司图标"
+        c_net_address: "公司网站"
+        c_phone: "公司电话"
+        c_address: "公司地址"
+        c_create_time: "创建时间"
+        c_persion: "法人代表"
+        c_province: "所在省份"
+        c_product_type: "项目类型"
+      p2pproduct:
+        name: "产品名称"
+        company: "公司"        
+        lowestamount: "最低投资额"
+        producttypelabel: "企业类型"
+        suppliernameshort: "短名"
+        supplierlogourl: "logo"
+        channelurl: "企业网址"
+        expectedprofitrate: "收益率"
+        idea: "创意"
+        Extrafield: "投资周期"
+        Invertfield: "投资类型"
+        Tterm: "投资期限"
+        p_min_inverstment: "起投金额"
+        p_is_redeem: "是否赎回"
+        p_is_transfer: "是否转让"
+        p_title: "产品标题"
+      yonghu:
+        xingming: "姓名"
+        gongsimingcheng: "公司名称"
+        shouji: "手机号码"
+        qq: "QQ"
+        quhao: "区号"
+        gongsidianhua: "公司电话"
+        ip: "IP"
+      zf_bjietu:
+        zhanghu: '姓名'
+        shijian: '时间'
+        shouji: '支付宝'
+      zf_bduihua:
+        riqi1: '日期1'
+        riqi2: '日期2'
+        riqi3: '日期3'
+        jin1: '金额1'
+        jin2: '金额2'
+        jin3: '金额3'
+        touxiang: '对方头像'
+        zhanghu: '账户'
+        shouji: '手机'
+        jiaoyihao:
+        shijian: '时间'
+        name: '对方姓名'
+      wxzhuanzhang:
+        jin: '金额'
+        riqi: '日期'
+        xingming: '姓名'
+      l:
+        a: "成功案例"
+        created_at: "发布时间"
+      l1:
+        a: "房源地址"
+        user: "58账号"
+        passwd58: "58密码"
+      blog: 
+        title: "标题"
+        body: "内容"
+        tag: "标签"
+      user:
+        email: "qq邮箱"
+        name: "帐号"
+        username: "58账号"
+        passwd58: "58密码"
+        password: "密码"
+        Log_in: "登陆"
+        password_confirmation: "再次确认密码"
+        question: "忘记密码问题"
+        answer: "忘记密码答案"
+        unauthenticated: "未验证"
+      smslogrecord:
+        jieshouhaoma: "接收号码"
+        neirong: "内容"
+        xiangmu: "项目"
+        huoqushijian: "获取时间"
+      smschongzhirecord:
+        oldbi: "充值前艾玛币"
+        chongzhibi: "充值艾玛币"
+        dingdanhao: "订单号"
+        chongzhijine: "充值金额"
+      smstaglist:
+        name: "项目名称"
+        price: "单价"
+        laiyuan: "来源"
+        isonline: "状态"
+      smsuser:
+        usertype: "用户类型"
+        mail: '邮件'
+        mob: '手机'
+        loginname: '登录名'
+        zhifubao: '支付宝'
+      azufang:
+        username: '58用户名'
+        password:  '58密码'
+        innertext: '描述'
+        xiaoqu: '小区'
+        title: '标题'
+        area: '面积'
+        minprice: '价格'
+        lianxiren: '联系人'
+        phone: '手机'
+        tupian: '原始58图片不建议改动'
+        zongceng: '总层'
+        ceng: '几层'
+        wei: '卫数'
+        ting: '厅'
+        shi: '房间'
+   
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "不能为空"
+              taken: "已被注册"
+            password:
+              blank: "不能为空"
+              too_short: "最短%{count}个字符"
+              too_long:  "最长%{count}个字符"
+            password_confirmation:
+              blank: "重置密码不能为空"
+              confirmation: "两次密码输入不一致，请重新输入"
+            question:
+              blank: "不能为空"
+            answer:
+              blank: "不能为空"
+
+

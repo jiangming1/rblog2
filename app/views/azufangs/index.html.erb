@@ -1,0 +1,51 @@
+<%- model_class = Azufang -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:username) %></th>
+      <th><%= model_class.human_attribute_name(:xiaoqu) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:area) %></th>
+      <th><%= model_class.human_attribute_name(:minprice) %></th>
+      <th><%= model_class.human_attribute_name(:lianxiren) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:money) %></th>
+      <th><%= model_class.human_attribute_name(:weixin) %></th>
+      <th><%= model_class.human_attribute_name(:qq) %></th>
+      <th><%= model_class.human_attribute_name(:shi) %></th>
+      <th><%= model_class.human_attribute_name(:ting) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @azufangs.each do |azufang| %>
+      <tr>
+        <td><%= link_to azufang.id, azufang_path(azufang) %></td>
+        <td><%= azufang.username %></td>
+        <td><%= azufang.xiaoqu %></td>
+        <td><%= azufang.title %></td>
+        <td><%= azufang.area %></td>
+        <td><%= azufang.minprice %></td>
+        <td><%= azufang.lianxiren %></td>
+        <td><%= azufang.phone %></td>
+        <td><%= azufang.money %></td>
+        <td><%= azufang.weixin %></td>
+        <td><%= azufang.qq %></td>
+        <td><%= azufang.shi %></td>
+        <td><%= azufang.ting %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_azufang_path(azufang), :class => 'btn btn-default btn-xs' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_azufang_path,
+            :class => 'btn btn-primary' %>

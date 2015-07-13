@@ -1,0 +1,2 @@
+module SmsusersHelper
+end

@@ -1,0 +1,81 @@
+<%= form_for(@p2pproduct) do |f| %>
+  <% if @p2pproduct.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@p2pproduct.errors.count, "error") %> prohibited this p2pproduct from being saved:</h2>
+
+      <ul>
+      <% @p2pproduct.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :lowestAmount %><br>
+    <%= f.text_field :lowestAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :producttypelabel %><br>
+    <%= f.text_field :producttypelabel %>
+  </div>
+  <div class="field">
+    <%= f.label :suppliernameshort %><br>
+    <%= f.text_field :suppliernameshort %>
+  </div>
+  <div class="field">
+    <%= f.label :supplierlogourl %><br>
+    <%= f.text_field :supplierlogourl %>
+  </div>
+  <div class="field">
+    <%= f.label :channelurl %><br>
+    <%= f.text_field :channelurl %>
+  </div>
+  <div class="field">
+    <%= f.label :expectedprofitrate %><br>
+    <%= f.text_field :expectedprofitrate %>
+  </div>
+  <div class="field">
+    <%= f.label :idea %><br>
+    <%= f.text_field :idea %>
+  </div>
+  <div class="field">
+    <%= f.label :extrafields %><br>
+    <%= f.text_field :extrafields %>
+  </div>
+  <div class="field">
+    <%= f.label :investfield %><br>
+    <%= f.text_field :investfield %>
+  </div>
+  <div class="field">
+    <%= f.label :term %><br>
+    <%= f.number_field :term %>
+  </div>
+  <div class="field">
+    <%= f.label :p_min_investment %><br>
+    <%= f.number_field :p_min_investment %>
+  </div>
+  <div class="field">
+    <%= f.label :earlyBack %><br>
+    <%= f.number_field :earlyBack %>
+  </div>
+  <div class="field">
+    <%= f.label :earlytransfer %><br>
+    <%= f.number_field :earlytransfer %>
+  </div>
+  <div class="field">
+    <%= f.label :p_title %><br>
+    <%= f.text_field :p_title %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Yonghus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Xingming</th>
+      <th>Gongsimingcheng</th>
+      <th>Shouji</th>
+      <th>Qq</th>
+      <th>Quhao</th>
+      <th>Gongsidianhua</th>
+      <th>Ip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+	  <%=@data %>  
+	 <% @yonghus.each do |yonghu| %>
+      <tr>
+        <td><%= yonghu.xingming %></td>
+        <td><%= yonghu.gongsimingcheng %></td>
+        <td><%= yonghu.shouji %></td>
+        <td><%= yonghu.qq %></td>
+        <td><%= yonghu.quhao %></td>
+        <td><%= yonghu.gongsidianhua %></td>
+        <td><%= yonghu.ip %></td>
+        <td><%= link_to 'Show', yonghu %></td>
+        <td><%= link_to 'Edit', edit_yonghu_path(yonghu) %></td>
+        <td><%= link_to 'Destroy', yonghu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Yonghu', new_yonghu_path %>

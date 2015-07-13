@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Smszfblogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Zfbid</th>
+      <th>Qian</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @smszfblogs.each do |smszfblog| %>
+      <tr>
+        <td><%= smszfblog.zfbid %></td>
+        <td><%= smszfblog.qian %></td>
+        <td><%= link_to 'Show', smszfblog %></td>
+        <td><%= link_to 'Edit', edit_smszfblog_path(smszfblog) %></td>
+        <td><%= link_to 'Destroy', smszfblog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Smszfblog', new_smszfblog_path %>
