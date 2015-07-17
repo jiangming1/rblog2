@@ -1,5 +1,7 @@
 class SmstagsController < ApplicationController
+ before_filter :authenticate_user_from_token!
   before_action :set_smstag, only: [:show, :edit, :update, :destroy]
+ # before_filter :authenticate_user!
 
   # GET /smstags
   # GET /smstags.json
@@ -41,7 +43,7 @@ end
     @smstag = Smstag.new(smstag_params)
 
     respond_to do |format|
-      if @smstag.save
+      if @smstag.save and current_user
         format.html { redirect_to @smstag, notice: 'Smstag was successfully created.' }
         format.json { render :show, status: :created, location: @smstag }
       else

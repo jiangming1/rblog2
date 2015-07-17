@@ -1,4 +1,5 @@
 class CentersController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_center, only: [:show, :edit, :update, :destroy]
 
   # GET /centers

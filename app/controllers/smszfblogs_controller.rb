@@ -10,10 +10,12 @@ class SmszfblogsController < ApplicationController
   def show
 if !params[:t].nil? then
   @smszfblog=Smszfblog.where("zfbid = ? ",params[:t]).order("id desc").first
-  if !@smszfblog.nil? then
+  if !@smszfblog.nil? and curent_user.qian then
     current_user.qian=current_user.qian+@smszfblog.qian*100
     current_user.save
-    @smszfblog.delete
+    @smszfblog.deletei
+    @smszfblog=new
+    @smszfblog.name='冲值成功'
   else
     @smszfblog=new
   end

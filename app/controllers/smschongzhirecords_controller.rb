@@ -1,10 +1,11 @@
 class SmschongzhirecordsController < ApplicationController
   before_action :set_smschongzhirecord, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /smschongzhirecords
   # GET /smschongzhirecords.json
   def index
-    @smschongzhirecords =Smschongzhirecord.where("user_id=?",current_user.id)
+      @smschongzhirecords =Smschongzhirecord.where("user_id=?",current_user.id)
   end
 
   # GET /smschongzhirecords/1
