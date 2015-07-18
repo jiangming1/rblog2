@@ -8,14 +8,16 @@ class SmszfblogsController < ApplicationController
   end
   # GET /smszfblogs/1.json
   def show
+    if current_user.qian.nil? then
+      current_user.qian=0
+    end
 if !params[:t].nil? then
-  @smszfblog=Smszfblog.where("zfbid = ? ",params[:t]).order("id desc").first
-  if !@smszfblog.nil? and curent_user.qian then
+  @smszfblog=Smszfblog.where("zfbid = ? and used=? ",params[:t],false).order("id desc").first
+  if !@smszfblog.nil? and current_user then
     current_user.qian=current_user.qian+@smszfblog.qian*100
     current_user.save
-    @smszfblog.deletei
-    @smszfblog=new
-    @smszfblog.name='冲值成功'
+    @smszfblog.used=true
+    @smszfblog.save
   else
     @smszfblog=new
   end

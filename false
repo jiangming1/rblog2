@@ -1,0 +1,2 @@
+      invoke  active_record
+   identical    db/migrate/20150717094256_add_used_to_smszfblogs.rb

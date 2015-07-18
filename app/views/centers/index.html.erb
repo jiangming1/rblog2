@@ -36,7 +36,7 @@ $(document).ready(function(){
     htmlobj=$.ajax({url:"/smszfblogs/1.json?t="+zfbid,async:false});
     jsonResp=eval("("+htmlobj.responseText+")");
     if (!jsonResp.qian==""){
-      $("#qian").html(jsonResp.qian*100);
+      $("#qian").html("冲值成功新增"jsonResp.qian*100);
       // timer1=window.setInterval(f,8000);
       window.setTimeout(f,8000);
       g1=1;

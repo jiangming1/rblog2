@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150713105320) do
+ActiveRecord::Schema.define(version: 20150717094256) do
 
   create_table "azufangs", force: :cascade do |t|
     t.string   "username"
@@ -211,8 +211,9 @@ ActiveRecord::Schema.define(version: 20150713105320) do
   create_table "smszfblogs", force: :cascade do |t|
     t.string   "zfbid"
     t.integer  "qian"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "used",       default: false
   end
 
   create_table "softnames", force: :cascade do |t|
