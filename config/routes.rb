@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :welcomes
   #devise_for :users
   devise_for :users, :controllers => {:registrations => "users/registrations"}   
-root :to => "ls#index"
+root :to => "centers#index"
   resources :azufangs
   resources :p2pproducts
   resources :documents
