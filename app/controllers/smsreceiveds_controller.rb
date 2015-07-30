@@ -30,7 +30,8 @@ if !@smsreceived1.nil? then
   @smslog.huoqushijian=@smsreceived.created_at
   @smslog.user_id=current_user.id
   @smslog.save
-  current_user.qian=current_user.qian-10
+  current_user.qian=current_user.qian-smstag.price
+#用户人民币减去项目单价
   current_user.save
 if !@smsno1.nil? then
   #找到后更新tag下的手机号
