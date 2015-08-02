@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rjs
+  resources :yuehuis
   resources :dizhis
   resources :smszfblogs
   resources :smszfblogs

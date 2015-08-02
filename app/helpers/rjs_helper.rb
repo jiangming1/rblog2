@@ -1,0 +1,2 @@
+module RjsHelper
+end

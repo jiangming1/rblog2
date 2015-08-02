@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150730085612) do
+ActiveRecord::Schema.define(version: 20150802063645) do
 
   create_table "azufangs", force: :cascade do |t|
     t.string   "username"
@@ -137,6 +137,23 @@ ActiveRecord::Schema.define(version: 20150730085612) do
     t.date     "birthday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "rjs", force: :cascade do |t|
+    t.string   "ming"
+    t.string   "danjia"
+    t.string   "wangjia"
+    t.string   "jieshao"
+    t.string   "pdf"
+    t.string   "caozuo"
+    t.string   "kehuduan"
+    t.string   "daohang"
+    t.string   "chuangkou"
+    t.string   "baobiao"
+    t.string   "jiaocheng"
+    t.string   "xinxijiegou"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "smschongzhirecords", force: :cascade do |t|
@@ -287,6 +304,14 @@ ActiveRecord::Schema.define(version: 20150730085612) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+  end
+
+  create_table "yuehuis", force: :cascade do |t|
+    t.string   "xingming"
+    t.string   "tel"
+    t.string   "addr"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "zf_bduihuas", force: :cascade do |t|

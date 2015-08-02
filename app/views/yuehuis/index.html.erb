@@ -1,4 +1,4 @@
-<%- model_class = Smszfblog -%>
+<%- model_class = Yuehui -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
@@ -6,26 +6,26 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:zfbid) %></th>
-      <th><%= model_class.human_attribute_name(:qian) %></th>
-      <th><%= model_class.human_attribute_name(:used) %></th>
+      <th><%= model_class.human_attribute_name(:xingming) %></th>
+      <th><%= model_class.human_attribute_name(:tel) %></th>
+      <th><%= model_class.human_attribute_name(:addr) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
-    <% @smszfblogs.each do |smszfblog| %>
+    <% @yuehuis.each do |yuehui| %>
       <tr>
-        <td><%= link_to smszfblog.id, smszfblog_path(smszfblog) %></td>
-        <td><%= smszfblog.zfbid %></td>
-        <td><%= smszfblog.qian %></td>
-        <td><%= smszfblog.used %></td>
-        <td><%=l smszfblog.created_at %></td>
+        <td><%= link_to yuehui.id, yuehui_path(yuehui) %></td>
+        <td><%= yuehui.xingming %></td>
+        <td><%= yuehui.tel %></td>
+        <td><%= yuehui.addr %></td>
+        <td><%=l yuehui.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_smszfblog_path(smszfblog), :class => 'btn btn-default btn-xs' %>
+                      edit_yuehui_path(yuehui), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      smszfblog_path(smszfblog),
+                      yuehui_path(yuehui),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-xs btn-danger' %>
@@ -36,5 +36,5 @@
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_smszfblog_path,
+            new_yuehui_path,
             :class => 'btn btn-primary' %>

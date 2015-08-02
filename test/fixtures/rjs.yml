@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ming: MyString
+  danjia: MyString
+  wangjia: MyString
+  jieshao: MyString
+  pdf: MyString
+  caozuo: MyString
+  kehuduan: MyString
+  daohang: MyString
+  chuangkou: MyString
+  baobiao: MyString
+  jiaocheng: MyString
+  xinxijiegou: MyString
+
+two:
+  ming: MyString
+  danjia: MyString
+  wangjia: MyString
+  jieshao: MyString
+  pdf: MyString
+  caozuo: MyString
+  kehuduan: MyString
+  daohang: MyString
+  chuangkou: MyString
+  baobiao: MyString
+  jiaocheng: MyString
+  xinxijiegou: MyString

@@ -1,0 +1,41 @@
+<%- model_class = Rj -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:ming) %>:</strong></dt>
+  <dd><%= @rj.ming %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:danjia) %>:</strong></dt>
+  <dd><%= @rj.danjia %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:wangjia) %>:</strong></dt>
+  <dd><%= @rj.wangjia %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:jieshao) %>:</strong></dt>
+  <dd><%= @rj.jieshao %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:pdf) %>:</strong></dt>
+  <dd><%= @rj.pdf %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:caozuo) %>:</strong></dt>
+  <dd><%= @rj.caozuo %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:kehuduan) %>:</strong></dt>
+  <dd><%= @rj.kehuduan %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:daohang) %>:</strong></dt>
+  <dd><%= @rj.daohang %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:chuangkou) %>:</strong></dt>
+  <dd><%= @rj.chuangkou %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:baobiao) %>:</strong></dt>
+  <dd><%= @rj.baobiao %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:jiaocheng) %>:</strong></dt>
+  <dd><%= @rj.jiaocheng %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:xinxijiegou) %>:</strong></dt>
+  <dd><%= @rj.xinxijiegou %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              rjs_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_rj_path(@rj), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              rj_path(@rj),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

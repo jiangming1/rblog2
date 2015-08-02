@@ -1,25 +1,45 @@
-<%= form_for(@smszfblog) do |f| %>
-  <% if @smszfblog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@smszfblog.errors.count, "error") %> prohibited this smszfblog from being saved:</h2>
+<%= form_for @smszfblog, :html => { :class => "form-horizontal smszfblog" } do |f| %>
 
-      <ul>
-      <% @smszfblog.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <% if @smszfblog.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@smszfblog.errors.count, "error") %> prohibited this smszfblog from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @smszfblog.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :zfbid %><br>
-    <%= f.text_field :zfbid %>
+  <div class="control-group">
+    <%= f.label :zfbid, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zfbid, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smszfblog[:zfbid]) %>
   </div>
-  <div class="field">
-    <%= f.label :qian %><br>
-    <%= f.number_field :qian %>
+  <div class="control-group">
+    <%= f.label :qian, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :qian, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smszfblog[:qian]) %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="control-group">
+    <%= f.label :used, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :used, :class => 'form-control' %>
+    </div>
+    <%= error_span(@smszfblog[:used]) %>
   </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            smszfblogs_path, :class => 'btn btn-default' %>
+
 <% end %>

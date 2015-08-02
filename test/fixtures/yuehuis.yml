@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  xingming: MyString
+  tel: MyString
+  addr: MyString
+
+two:
+  xingming: MyString
+  tel: MyString
+  addr: MyString
