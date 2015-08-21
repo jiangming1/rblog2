@@ -1,0 +1,847 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_authentication_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_authentication_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-12 00:46:27 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CentersController#index as HTML
+Completed 401 Unauthorized in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:46:28 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 4531ms (Views: 4505.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-3925a96e29ebacce767f7e280962585dfb9c0a952852429edaadd409dde05734.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/centers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/dizhis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/azufangs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/documents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/p2pcompanies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/rjs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/p2pproducts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smschongzhirecords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/scaffolds.self-b6014fa69bb47614e1006c9576c9b03aeaec047af9213167db00a24fc1907862.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smsnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smsreceiveds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smslogrecords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smstaglists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smstags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smsusers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smsuserusedtellists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/smszfblogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/softnames.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/welcomes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:33 +0800
+
+
+Started GET "/assets/wxzhuanzhangs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/yonghus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/zf_bduihuas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/yuehuis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/zf_bjietus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/azufangs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/blogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/centers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/companies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/documents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/dizhis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/l1s.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/ls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/p2pcompanies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/p2pproducts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/rjs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smschongzhirecords.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smslogrecords.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smsnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smsreceiveds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smstaglists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smstags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:34 +0800
+
+
+Started GET "/assets/smsusers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/softnames.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/smsuserusedtellists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/welcomes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/wxzhuanzhangs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/yonghus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/yuehuis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/zf_bduihuas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/zf_bjietus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:35 +0800
+
+
+Started GET "/assets/smszfblogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 00:46:38 +0800
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2015-08-12 00:46:38 +0800
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (26.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (559.4ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (120.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (428.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:49:35 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HT7fv0I6mUtqscoQMg5zTBauycEUxQgfypjPgG+FqUWCjncfi5vAquSH+uHRWtFa9gJT87IGe1jJQUE44IrYfA==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "2100803@qq.com"]]
+Completed 401 Unauthorized in 111ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HT7fv0I6mUtqscoQMg5zTBauycEUxQgfypjPgG+FqUWCjncfi5vAquSH+uHRWtFa9gJT87IGe1jJQUE44IrYfA==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 678ms (Views: 582.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:49:41 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zzYv9ESiCAVc1dWz9YN/ZM5n6SYsj/58xvL03HNZRF0jHAfGLPRwZtFZ6csgq/rc5UFlj5xTL7wwkVr/sIUKA==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "2100803@qq.com"]]
+Completed 401 Unauthorized in 99ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zzYv9ESiCAVc1dWz9YN/ZM5n6SYsj/58xvL03HNZRF0jHAfGLPRwZtFZ6csgq/rc5UFlj5xTL7wwkVr/sIUKA==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 664ms (Views: 568.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-08-12 00:49:45 +0800
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 609ms (Views: 606.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-08-12 00:49:57 +0800
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gyFulcicKeeLqs3Qi/tuH5YXVJGpDkeAp2nf1S4kamgckcY1AT1wBgWc/SFor8wJdrvOow/NNMeksFFtoSsbUQ==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "username"=>"", "passwd58"=>""}, "commit"=>"注册"}
+Unpermitted parameters: username, passwd58
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '2100803@qq.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 670ms (Views: 550.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/centers" for 127.0.0.1 at 2015-08-12 00:50:05 +0800
+Processing by CentersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:50:05 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 593ms (Views: 574.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:50:12 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2M6otevOxJAUuUDZzS35tQ6DS0RuAiWOeOMgvmq1vVRHfgAVIm+dcZqPcCgueVuj7i/RdsjBVsl7Oq4G5brMbQ==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "2100803@qq.com"]]
+Completed 401 Unauthorized in 97ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2M6otevOxJAUuUDZzS35tQ6DS0RuAiWOeOMgvmq1vVRHfgAVIm+dcZqPcCgueVuj7i/RdsjBVsl7Oq4G5brMbQ==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 667ms (Views: 571.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:50:18 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n1hPNSNNJAns4GUiXX9f54pQ46hniDBI1yx3WMekSuQA6OeV6ux96GLWVdO+K/3xavx5msFLQw/U9fngSKs73Q==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "2100803@qq.com"]]
+Completed 401 Unauthorized in 96ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n1hPNSNNJAns4GUiXX9f54pQ46hniDBI1yx3WMekSuQA6OeV6ux96GLWVdO+K/3xavx5msFLQw/U9fngSKs73Q==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 661ms (Views: 565.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 00:50:23 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t2vj5sxWkpr/u90F24F50FrSjooe9/+3UaJrlohsaFoo20tGBffLe3GN7fQ41dvGun4UuLg0jPBSe+UuB2MZYw==", "user"=>{"email"=>"2100803@qq.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "2100803@qq.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-08-01 07:49:50.381617"], ["current_sign_in_at", "2015-08-11 16:50:24.001781"], ["last_sign_in_ip", "222.46.26.53"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 5], ["updated_at", "2015-08-11 16:50:24.003113"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/centers
+Completed 302 Found in 122ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/centers" for 127.0.0.1 at 2015-08-12 00:50:24 +0800
+Processing by CentersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered centers/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 576ms (Views: 571.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yuehuis" for 127.0.0.1 at 2015-08-12 00:50:36 +0800
+Processing by YuehuisController#index as HTML
+  [1m[35mYuehui Load (0.6ms)[0m  SELECT "yuehuis".* FROM "yuehuis"
+  Rendered yuehuis/index.html.erb within layouts/application (31.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 603ms (Views: 598.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/yuehuis/3/edit" for 127.0.0.1 at 2015-08-12 00:54:56 +0800
+Processing by YuehuisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mYuehui Load (0.3ms)[0m  SELECT  "yuehuis".* FROM "yuehuis" WHERE "yuehuis"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered yuehuis/_form.html.erb (6.2ms)
+  Rendered yuehuis/edit.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 573ms (Views: 568.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/yuehuis/3" for 127.0.0.1 at 2015-08-12 00:55:04 +0800
+Processing by YuehuisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oUxvlIKN5Hf950+YUM1589W62po3uDR7OqO+KPtDoarPqocI6TJxGiNhZyU27wJYUV51y/oB4bkNwRkFgSTXJA==", "yuehui"=>{"xingming"=>"叶巧珍", "tel"=>"15779909799", "addr"=>"合肥"}, "commit"=>"更新Yuehui", "id"=>"3"}
+  [1m[35mYuehui Load (0.2ms)[0m  SELECT  "yuehuis".* FROM "yuehuis" WHERE "yuehuis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "yuehuis" SET "tel" = ?, "updated_at" = ? WHERE "yuehuis"."id" = ?  [["tel", "15779909799"], ["updated_at", "2015-08-11 16:55:04.419298"], ["id", 3]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/yuehuis/3
+Completed 302 Found in 13ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/yuehuis/3" for 127.0.0.1 at 2015-08-12 00:55:04 +0800
+Processing by YuehuisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mYuehui Load (0.2ms)[0m  SELECT  "yuehuis".* FROM "yuehuis" WHERE "yuehuis"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered yuehuis/show.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 571ms (Views: 569.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yuehuis" for 127.0.0.1 at 2015-08-12 00:55:07 +0800
+Processing by YuehuisController#index as HTML
+  [1m[35mYuehui Load (0.3ms)[0m  SELECT "yuehuis".* FROM "yuehuis"
+  Rendered yuehuis/index.html.erb within layouts/application (26.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 588ms (Views: 586.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/centers" for 127.0.0.1 at 2015-08-12 00:55:13 +0800
+Processing by CentersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered centers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 667ms (Views: 664.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/smstags" for 127.0.0.1 at 2015-08-12 00:55:14 +0800
+Processing by SmstagsController#index as HTML
+  [1m[36mSmstag Load (0.3ms)[0m  [1mSELECT "smstags".* FROM "smstags"[0m
+  Rendered smstags/index.html.erb within layouts/application (25.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 699ms (Views: 694.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/smschongzhirecords" for 127.0.0.1 at 2015-08-12 00:55:15 +0800
+Processing by SmschongzhirecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmschongzhirecord Load (0.2ms)[0m  SELECT "smschongzhirecords".* FROM "smschongzhirecords" WHERE (user_id=1)
+  Rendered smschongzhirecords/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 607ms (Views: 597.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 00:55:17 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmslogrecord Load (0.5ms)[0m  SELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc
+  Rendered smslogrecords/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 567ms (Views: 559.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 00:55:19 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmslogrecord Load (0.2ms)[0m  SELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc
+  Rendered smslogrecords/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 544ms (Views: 540.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 00:55:22 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmslogrecord Load (0.3ms)[0m  SELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc
+  Rendered smslogrecords/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 558ms (Views: 555.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 00:55:27 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmslogrecord Load (0.2ms)[0m  SELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc
+  Rendered smslogrecords/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 561ms (Views: 558.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/smstags" for 127.0.0.1 at 2015-08-12 00:56:52 +0800
+Processing by SmstagsController#index as HTML
+  [1m[36mSmstag Load (0.2ms)[0m  [1mSELECT "smstags".* FROM "smstags"[0m
+  Rendered smstags/index.html.erb within layouts/application (11.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 566ms (Views: 564.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/smschongzhirecords" for 127.0.0.1 at 2015-08-12 00:56:56 +0800
+Processing by SmschongzhirecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSmschongzhirecord Load (0.2ms)[0m  SELECT "smschongzhirecords".* FROM "smschongzhirecords" WHERE (user_id=1)
+  Rendered smschongzhirecords/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 573ms (Views: 570.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2015-08-12 00:57:01 +0800
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 625ms (Views: 622.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/smschongzhirecords" for 127.0.0.1 at 2015-08-12 07:19:42 +0800
+Processing by SmschongzhirecordsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSmschongzhirecord Load (0.2ms)[0m  [1mSELECT "smschongzhirecords".* FROM "smschongzhirecords" WHERE (user_id=1)[0m
+  Rendered smschongzhirecords/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 672ms (Views: 669.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 07:19:44 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSmslogrecord Load (0.3ms)[0m  [1mSELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc[0m
+  Rendered smslogrecords/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 686ms (Views: 682.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/smslogrecords" for 127.0.0.1 at 2015-08-12 07:19:45 +0800
+Processing by SmslogrecordsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSmslogrecord Load (0.2ms)[0m  [1mSELECT "smslogrecords".* FROM "smslogrecords" WHERE (user_id=1)  ORDER BY id desc[0m
+  Rendered smslogrecords/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 556ms (Views: 552.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-19 18:15:39 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CentersController#index as HTML
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-19 18:15:40 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 2096ms (Views: 2063.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-3925a96e29ebacce767f7e280962585dfb9c0a952852429edaadd409dde05734.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/centers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/dizhis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/p2pcompanies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/people.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/rjs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/p2pproducts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/documents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smsnos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/azufangs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smschongzhirecords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/scaffolds.self-b6014fa69bb47614e1006c9576c9b03aeaec047af9213167db00a24fc1907862.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smsreceiveds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smslogrecords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smstags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smsuserusedtellists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smstaglists.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/wxzhuanzhangs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smsusers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/welcomes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/smszfblogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:43 +0800
+
+
+Started GET "/assets/softnames.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/yuehuis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/yonghus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/zf_bjietus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/zf_bduihuas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/azufangs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:44 +0800
+
+
+Started GET "/assets/blogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/centers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/companies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/ls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/dizhis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/l1s.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/p2pcompanies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/documents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/p2pproducts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smschongzhirecords.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/rjs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smslogrecords.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smsreceiveds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smstaglists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smsnos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smstags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smsusers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smsuserusedtellists.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/softnames.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/welcomes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/wxzhuanzhangs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/yonghus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/yuehuis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/zf_bduihuas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/zf_bjietus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:45 +0800
+
+
+Started GET "/assets/smszfblogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-19 18:15:48 +0800
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2015-08-19 18:15:48 +0800
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/apple/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.9ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.7ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (321.2ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (105.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/apple/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (223.7ms)

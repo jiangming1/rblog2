@@ -1,10 +1,10 @@
 class AzufangsController < ApplicationController
-  before_action :set_azufang, only: [:show, :edit, :update, :destroy,:tuiguang]
+    before_action :set_azufang, only: [:show, :edit, :update, :destroy,:tuiguang]
 
   # GET /azufangs
   # GET /azufangs.json
   def index
-    @azufangs = Azufang.all
+      @azufangs = Azufang.all
   end
 
   # GET /azufangs/1
