@@ -1,10 +1,16 @@
 class AzufangsController < ApplicationController
     before_action :set_azufang, only: [:show, :edit, :update, :destroy,:tuiguang]
-
+    before_filter :authenticate_user_from_token!
   # GET /azufangs
   # GET /azufangs.json
   def index
+      if current_user
       @azufangs = Azufang.all
+      else
+    respond_to do |format|                                                            
+             format.html { redirect_to documents_url, notice: 'Azufang was successfully destryed.'  }
+      end  
+    end
   end
 
   # GET /azufangs/1

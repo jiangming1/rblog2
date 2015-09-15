@@ -20,8 +20,8 @@ Rails.application.routes.draw do
   resources :l1s
   resources :ls
   resources :welcomes
-  #devise_for :users
-  devise_for :users, :controllers => {:registrations => "users/registrations"}   
+ # devise_for :users
+  devise_for :users, :controllers => {:registrations => "users/registrations",:sessions => "users/sessions"}   
 root :to => "centers#index"
   resources :azufangs
   resources :p2pproducts

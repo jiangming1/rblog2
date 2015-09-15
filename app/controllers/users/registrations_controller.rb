@@ -4,7 +4,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
        respond_to do |format|
          if @user.save            
            format.html { redirect_to documents_url, notice: 'Blog was successfully created.' }
-           format.json { render :show, status: :created, location: @user }
+           #format.json { render :show, status: :created, location: @user }
+           format.json { render json: { success: true, token:@user.authentication_token, user_id:@user.id }}
           else
            format.html { render :new }
            format.json { render json: @user.errors, status: :unprocessable_entity }
