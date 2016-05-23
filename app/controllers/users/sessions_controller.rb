@@ -9,17 +9,17 @@ class Users::SessionsController < Devise::SessionsController
      if user.valid_password?(params[:user][:password])
        sign_in("user", user)
        user.ensure_authentication_token
-    #   format.html { 
-    #     redirect_to documents_url, notice: 'Blog was successfully created.'
-    #   }
+       format.html { 
+         redirect_to documents_url, notice: 'Blog was successfully created.'
+       }
        format.json { 
          render json: {token:user.authentication_token, user_id: user.id}
        }
-      format.html { 
-         redirect_to documents_url, notice: 'Blog was successfully created.'
-       }
 
      else
+       format.html {
+         redirect_to documents_url, notice: 'Blog was'
+       }
        format.json {
          render json: {error: {status:-1}}
        }
